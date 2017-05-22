@@ -6,7 +6,7 @@
 
         public string Ra { get; set; }
 
-        public string CodDisciplina { get; set; }
+        public string Disciplina { get; set; }
 
         public string Semestre { get; set; }
 
@@ -20,11 +20,11 @@
 
         public string Faltas2 { get; set; }
 
-        public string Faltas3 { get; set; }
+        //public string Faltas3 { get; set; }
 
-        public string Faltas4 { get; set; }
+        //public string Faltas4 { get; set; }
 
-        public string Faltas5 { get; set; }
+        //public string Faltas5 { get; set; }
 
         public string Faltastot { get; set; }
 
