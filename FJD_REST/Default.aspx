@@ -1,18 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FJD_REST.Default" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    <a href="../api/Login">Login</a>
-    <br />
-    <a href="../api/Historico/?type=json">Historico</a>
-    </div>
-    </form>
-</body>
+    <head runat="server">
+        <title>Fatec Jundiaí</title>
+    </head>
+    <body>
+        <meta http-equiv="refresh" content="1;URL=http://www.fatecjd.edu.br/site/" />
+    </body>
 </html>

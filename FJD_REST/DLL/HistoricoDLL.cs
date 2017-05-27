@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MySql.Data.MySqlClient;
-using FJD_REST.DLL;
 using FJD_REST.Models;
 
 namespace FJD_REST.DLL
@@ -11,7 +10,7 @@ namespace FJD_REST.DLL
     public class HistoricoDLL
     {
         Conexao c = new Conexao();
-        Historico bll = new Historico();
+        //Historico bll = new Historico();
 
         public List<Historico> Boletim(Historico bll)
         {

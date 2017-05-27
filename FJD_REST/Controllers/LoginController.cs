@@ -7,16 +7,20 @@ namespace FJD_REST.Controllers
 {
     public class LoginController : ApiController
     {
+        //Classe de Conexao com o servidor
         Conexao con = new Conexao();
+        //Classe de metodos do Login
         LoginDLL lo = new LoginDLL();
+        //Classe model.login
         Login login = new Login();
 
         // GET: api/Login
 
-        public IEnumerable<Login> Get()
+        /*public IEnumerable<string> Get()
         {
-            return lo.DadosLogin();
-        }
+            //return lo.DadosLogin();
+            return new string[] { "Acesso não autorizado" };
+        }*/
 
         // GET: api/Login/5
         public bool Get(string ra, string senha)

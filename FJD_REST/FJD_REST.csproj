@@ -121,6 +121,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HistoricoController.cs" />
+    <Compile Include="Controllers\IntranetArquivosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -131,6 +132,7 @@
     </Compile>
     <Compile Include="DLL\Conexao.cs" />
     <Compile Include="DLL\HistoricoDLL.cs" />
+    <Compile Include="DLL\IntranetArquivosDLL.cs" />
     <Compile Include="DLL\LoginDLL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

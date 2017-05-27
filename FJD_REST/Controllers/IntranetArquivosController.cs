@@ -4,40 +4,38 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using FJD_REST.DLL;
 using FJD_REST.Models;
+using FJD_REST.DLL;
 
 namespace FJD_REST.Controllers
 {
-    public class HistoricoController : ApiController
+    public class IntranetArquivosController : ApiController
     {
-        Historico bll = new Historico();
-        HistoricoDLL dll = new HistoricoDLL();
+        IntranetArquivosDLL arq = new IntranetArquivosDLL();
 
-        // GET: api/Historico/ra
-        public IEnumerable<Historico> Get(string ra)
+        // GET: api/IntranetArquivos/RA
+        public IEnumerable<Intranet_Arquivos> Get(string RA)
         {
-            bll.Ra = ra;
-            return dll.Boletim(bll);
+            return arq.Arquivos(RA);
         }
 
-        // GET: api/Historico/
-        /*public string Get()
+        // GET: api/IntranetArquivos/5
+       /* public string Get(int id)
         {
             return "value";
         }*/
 
-        // POST: api/Historico
+        // POST: api/IntranetArquivos
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/Historico/5
+        // PUT: api/IntranetArquivos/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Historico/5
+        // DELETE: api/IntranetArquivos/5
         public void Delete(int id)
         {
         }
